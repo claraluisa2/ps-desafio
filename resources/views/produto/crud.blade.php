@@ -11,9 +11,9 @@
 
                         @csrf
                         @isset($produto)
-                            @method("PUT")
+                            @method('PUT')
                         @else
-                            @method("POST")
+                            @method('POST')
                         @endisset
 
                         <div class="card ">
@@ -37,8 +37,7 @@
                                         </div>
                                     </div>
                                 @endif
-                                @component('produto.formulario', ['produto' => isset($produto) ? $produto : null,
-                                    'categorias' => $categorias])
+                                @component('produto.formulario', ['produto' => isset($produto) ? $produto : null, 'categorias' => $categorias])
                                 @endcomponent
                             </div>
                             <div class="card-footer ml-auto mr-auto">

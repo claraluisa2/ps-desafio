@@ -60,6 +60,7 @@ class ProdutoController extends Controller
     public function show($id)
     {
         $produto = Produto::find($id);
+        $produto->load('categorias');
         return response()->json($produto);
     }
 

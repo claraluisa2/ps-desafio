@@ -8,6 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\LocaleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\siteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,11 @@ use App\Http\Controllers\ProdutoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('siteIndex', [siteController::class, 'index'])->name('siteIndex');
+Route::get('medidas', [siteController::class, 'medidas'])->name('medidas');
+Route::get('produtos', [siteController::class, 'produtos'])->name('produtos');
+
 
 Route::middleware('locale')->group(function () {
 

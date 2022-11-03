@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+a:visited{
+    color: inherit;
+}
+
+#site-header {
+    width: 100%;
+    height: 30vh;
+    position: sticky;
+    top:0;
+    left: 0;
+    background-color: white;
+    color: black;
+
+}
+
+
+#um{
+    width: 100%;
+    height: 50vh;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+#header-conteiner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center ;
+    font-size: 100%;
+}
+
+#header-logo{
+    width: 20%;
+    min-height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+#header-logo img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+
+#header-links{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#primeiro-bloco{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#imgdesconto{
+    width: 10%;
+    height: 30%;
+    display: inline;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#textodesc{
+    width: 65%;
+    height: 30%;
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+#desconto{
+
+    width: 20%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#imgfrete{
+    width: 10%;
+    height: 30%;
+    display: inline;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#textofrete{
+    width: 65%;
+    height: 30%;
+    display: block;
+
+}
+
+#frete{
+
+    width: 22%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#imgcartao{
+    width: 10%;
+    height: 30%;
+    display: inline;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#textocartao{
+    width: 65%;
+    height: 30%;
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#cartao{
+
+    width: 20%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#index-card-section{
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 100px solid white ;
+}
+
+.index-produtos{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#lancamentos{
+    width: 100%;
+    height: 300vh;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 100px solid white;
+
+
+}
+
+.lancamentos-produtos{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#footer-site{
+    width: 100%;
+    height: 40vh;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(8, 113, 173);
+
+
+}
+
+#footer-conteiner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+
+}
+
+@media (max-width: 800px) {
+    #header-conteiner{
+        font-size: 60%;
+    }
+
+}
