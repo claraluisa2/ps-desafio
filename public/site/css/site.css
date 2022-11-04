@@ -11,9 +11,11 @@ a:visited{
     color: inherit;
 }
 
+
+
 #site-header {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     position: sticky;
     top:0;
     left: 0;
@@ -26,37 +28,49 @@ a:visited{
 #um{
     width: 100%;
     height: 50vh;
+
+
+}
+#um-img{
+    width: 100%;
+    height: 100%;
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
-
-
 }
 
 #header-conteiner {
     width: 100%;
-    height: 100%;
+    height: 30vh;
     display: flex;
-    justify-content: center ;
+    justify-content:center;
     font-size: 100%;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px 200px; /* 5px top and bottom, 20px on the sides */
+
 }
 
 #header-logo{
     width: 20%;
     min-height: 90%;
     display: flex;
+    justify-content:flex-end;
     align-items: center;
 }
 
 #header-logo img{
     width: 100%;
     min-height: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
     object-fit: scale-down;
     cursor: pointer;
 }
 
 #header-links{
-    width: 60%;
+    width: 80%;
     height: 90%;
     display: flex;
     justify-content: space-evenly;
@@ -72,7 +86,7 @@ a:visited{
     align-items: center;
 }
 
-#imgdesconto{
+#img-bloco{
     width: 10%;
     height: 30%;
     display: inline;
@@ -80,7 +94,7 @@ a:visited{
     align-items: center;
 
 }
-#textodesc{
+#texto-bloco{
     width: 65%;
     height: 30%;
     display: block;
@@ -90,59 +104,7 @@ a:visited{
 
 }
 
-#desconto{
-
-    width: 20%;
-    height: 30%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-#imgfrete{
-    width: 10%;
-    height: 30%;
-    display: inline;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-#textofrete{
-    width: 65%;
-    height: 30%;
-    display: block;
-
-}
-
-#frete{
-
-    width: 22%;
-    height: 30%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-#imgcartao{
-    width: 10%;
-    height: 30%;
-    display: inline;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-#textocartao{
-    width: 65%;
-    height: 30%;
-    display: block;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-#cartao{
+#p-bloco{
 
     width: 20%;
     height: 30%;
@@ -212,9 +174,142 @@ a:visited{
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 320px) {
     #header-conteiner{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        font-size: 40%;
+        border-width: 1px 1px; /* 5px top and bottom, 20px on the sides */
+    }
+}
+
+@media (max-width: 320px) {
+    #um{
+        height: 20vh;
+    }
+}
+
+@media (max-width: 320px) {
+    #um-img{
+        scale: 30%;
+    }
+}
+
+@media (max-width: 320px) {
+    #primeiro-bloco{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    #primeiro-bloco{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    #img-bloco{
+        width: 20%;
+        height: 25%;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        scale: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    #texto-bloco{
+        width: 65%;
+        height: 30%;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+}
+
+@media (max-width: 320px) {
+    #p-bloco{
+        width: 50%;
+        height: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+}
+
+@media (max-width: 320px) {
+    #lancamentos{
+        height: 600vh;
+        border: 1px solid white;
+
+    }
+
+}
+
+@media (max-width: 320px) {
+    .lancamentos-produtos{
+        width: 100%;
+        height: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        scale: 70%;
+
+    }
+
+}
+
+@media (max-width: 320px) {
+    #footer-site{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+
         font-size: 60%;
+
+    }
+
+}
+
+@media (max-width: 320px) {
+    #index-card-section{
+        width: 100%;
+        height: 700vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border: 1px solid white ;
+}
+
+
+}
+
+@media (max-width: 320px) {
+    .index-produtos{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scale: 70%;
+
     }
 
 }

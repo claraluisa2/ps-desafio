@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('site/css/site.css') }}">
 </head>
 
-<body style="height: 100%; position:auto">
+<body>
     @include('layouts.site.header')
     @yield('conteudo')
     @yield('produtos')

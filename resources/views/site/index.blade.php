@@ -5,17 +5,18 @@
 @endsection
 
 @section('conteudo')
-    <div id="um" style="width:100%; heigth:50vh;color:white; background-color:rgb(8, 113, 173)">
-        <img src="site/img/quadro.png"width="200px">
-        <img src="site/img/camisa.png"width="300px">
-        <img src="site/img/funko.png"width="200px">
-        <img src="site/img/marcapagina.png"width="200px">
-
+    <div id="um" style="color:white; background-color:rgb(8, 113, 173)">
+        <div id="um-img">
+            <img src="site/img/quadro.png"width="200px">
+            <img src="site/img/camisa.png"width="300px">
+            <img src="site/img/funko.png"width="200px">
+            <img src="site/img/marcapagina.png"width="200px">
+        </div>
     </div>
     <div id="primeiro-bloco" style=" background-color: white">
-        <div id="desconto">
-            <div id=imgdesconto><img src="{{ asset('site/img/desconto.png') }}" width="35px"></div>
-            <div id="textodesc">
+        <div id="p-bloco">
+            <div id=img-bloco><img src="{{ asset('site/img/desconto.png') }}" width="35px"></div>
+            <div id="texto-bloco">
                 <p>
                 <h3>PRIMEIRA COMPRA</h3>
                 </p>
@@ -27,9 +28,9 @@
         </div>
 
 
-        <div id="frete">
-            <div id="imgfrete"><img src="{{ asset('site/img/frete.png') }}" width="50px"></div>
-            <div id="textofrete">
+        <div id="p-bloco">
+            <div id="img-bloco"><img src="{{ asset('site/img/frete.png') }}" width="50px"></div>
+            <div id="texto-bloco">
                 <p>
                 <h3><b>FRETE GRÁTIS</b></h3>
                 </p>
@@ -39,9 +40,9 @@
             </div>
         </div>
 
-        <div id="cartao">
-            <div id="imgcartao"><img src="{{ asset('site/img/cartao.png') }}" width="50px"></div>
-            <div id="textocartao">
+        <div id="p-bloco">
+            <div id="img-bloco"><img src="{{ asset('site/img/cartao.png') }}" width="50px"></div>
+            <div id="texto-bloco">
                 <p>
                 <h3> 3X SEM JUROS</h3>
                 </p>
